@@ -61,44 +61,44 @@ Config.RewardPool = {
 
 ------------------------------------------------------------
 Config.SellItems = { -- Selling Prices
-	['copperore'] = math.random(50, 100),
-	['goldore'] = math.random(75, 125),
-	['ironore'] = math.random(100, 175),
-	['carbon'] = math.random(125, 200),
+	['copperore'] = 100,
+	['goldore'] = 100,
+	['ironore'] = 100,
+	['carbon'] = 100,
 	
-	['goldbar'] = math.random(1000, 1500),
+	['goldbar'] = 100,
 	
-	['uncut_emerald'] = math.random(150, 200),
-	['uncut_ruby'] = math.random(175, 225),
-	['uncut_diamond'] = math.random(200, 250),
-	['uncut_sapphire'] = math.random(250, 350),
+	['uncut_emerald'] = 100,
+	['uncut_ruby'] = 100,
+	['uncut_diamond'] = 100,
+	['uncut_sapphire'] = 100,
 
-	['emerald'] = math.random(225, 350),
-	['ruby'] = math.random(350, 450),
-	['diamond'] = math.random(500, 1000),
-	['sapphire'] = math.random(750, 1100),
+	['emerald'] = 100,
+	['ruby'] = 100,
+	['diamond'] = 100,
+	['sapphire'] = 100,
 
-	['diamond_ring'] = math.random(750, 1200),
-	['emerald_ring'] = math.random(850, 1250),
-	['ruby_ring'] = math.random(900, 1300),
-	['sapphire_ring'] = math.random(950, 1350),
+	['diamond_ring'] = 100,
+	['emerald_ring'] = 100,
+	['ruby_ring'] = 100,
+	['sapphire_ring'] = 100,
 
-	['diamond_necklace'] = math.random(800, 1250),
-	['emerald_necklace'] = math.random(900, 1300),
-	['ruby_necklace'] = math.random(950, 1350),
-	['sapphire_necklace'] = math.random(1000, 1400),
+	['diamond_necklace'] = 100,
+	['emerald_necklace'] = 100,
+	['ruby_necklace'] = 100,
+	['sapphire_necklace'] = 100,
 
-	['gold_ring'] = math.random(1300, 2000),
-	['goldchain'] = math.random(1000, 1500),
-	['10kgoldchain'] = math.random(3000, 6000),
+	['gold_ring'] = 100,
+	['goldchain'] = 100,
+	['10kgoldchain'] = 100,
 
 }
 
 ------------------------------------------------------------
 
 Config.PedList = { -- APPARENTLY You can call config locations IN the config, learn't that one today
-	--{ model = "S_M_Y_Construct_01", coords = Config.Locations['Mine'].location, heading = Config.Locations['Mine'].heading, gender = "male", scenario = "WORLD_HUMAN_CLIPBOARD", }, -- Outside Mine
-	--{ model = "S_M_Y_Construct_01", coords = Config.Locations['Quarry'].location, heading = Config.Locations['Quarry'].heading, gender = "male", scenario = "WORLD_HUMAN_CLIPBOARD", }, -- Outside Mine
+	{ model = "S_M_Y_Construct_01", coords = Config.Locations['Mine'].location, heading = Config.Locations['Mine'].heading, gender = "male", scenario = "WORLD_HUMAN_CLIPBOARD", }, -- Outside Mine
+	{ model = "S_M_Y_Construct_01", coords = Config.Locations['Quarry'].location, heading = Config.Locations['Quarry'].heading, gender = "male", scenario = "WORLD_HUMAN_CLIPBOARD", }, -- Outside Mine
 	{ model = "S_M_Y_Construct_01", coords = Config.Locations['Buyer'].location, heading = Config.Locations['Buyer'].heading, gender = "male", scenario = "WORLD_HUMAN_CLIPBOARD", }, -- Ore Buyer
 	{ model = "S_M_M_HighSec_03", coords = Config.Locations['Buyer2'].location, heading = Config.Locations['Buyer2'].heading, gender = "male", scenario = "WORLD_HUMAN_CLIPBOARD", }, -- Jewel Buyer
 }
@@ -121,59 +121,11 @@ Config.MineLights = {
 Config.Items = {
     label = "Mining Store",  slots = 7,
     items = {
-		[1] = { 
-			name = "water_bottle", 
-			price = 75, amount = 100, 
-			info = {}, 
-			type = "item", 
-			slot = 1, 
-		},
-		[2] = { 
-			name = "sandwich", 
-			price = 150, amount = 250, 
-			info = {}, 
-			type = "item", 
-			slot = 2, 
-		},
-		[3] = { 
-			name = "bandage", 
-			price = 200, 
-			amount = 100, 
-			info = {}, 
-			type = "item", 
-			slot = 3, 
-		},
-		--[[[4] = { 
-			name = "weapon_flashlight", 
-			price = 0, 
-			amount = 100, 
-			info = {}, 
-			type = "item", 
-			slot = 4, 
-		},]]
-		[4] = { 
-			name = "drill",	
-			price = 350, 
-			amount = 100, 
-			info = {}, 
-			type = "item", 
-			slot = 4, 
-		}, 
-		[5] = { 
-			name = "handdrill",	
-			price = 350, 
-			amount = 100, 
-			info = {}, 
-			type = "item",	
-			slot = 5, 
-		},
-		[6] = { 
-			name = "drillbit", 
-			price = 100, 
-			amount = 100,	
-			info = {}, 
-			type = "item", 
-			slot = 6, 
-		}, 
-	}		
+	[1] = { name = "water_bottle", price = 0, amount = 100, info = {}, type = "item", slot = 1, },
+	[2] = { name = "sandwich", price = 0, amount = 250, info = {}, type = "item", slot = 2, },
+	[3] = { name = "bandage", price = 0, amount = 100, info = {}, type = "item", slot = 3, },
+	[4] = { name = "weapon_flashlight", price = 0, amount = 100, info = {}, type = "item", slot = 4, }, 
+	[5] = { name = "drill",	price = 0, amount = 100, info = {}, type = "item", slot = 5, }, 
+	[6] = { name = "handdrill",	price = 0, amount = 100, info = {}, type = "item",	slot = 6, },
+	[7] = { name = "drillbit", price = 0, amount = 100,	info = {}, type = "item", slot = 7, }, }		
 }
